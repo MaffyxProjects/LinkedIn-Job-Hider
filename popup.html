@@ -1,0 +1,145 @@
+<!-- Simple popup to hide jobs in case the hide job button is not correctly inserted. -->
+<html>
+	<head>
+		<script src="popup.js"></script>
+	</head>
+<style>
+body{
+	background-color: #296dff;
+	width: 250px;
+	height: 190px;
+}
+select{
+	display: block;
+	margin: 0 auto;
+	width: 95%;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 15px;
+	height: 25px;
+}
+button{
+	display: inline;
+	margin: 0 auto;
+	width: 100%;
+	height: 30px;
+	padding:2px;
+	border-radius: 25px;
+	border: 2px solid;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: lightgrey;
+}
+button:active {
+	background-color: gray;
+	box-shadow: 0 1px #666;
+	transform: translateY(1px);
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+button:focus {
+	outline:0;
+}
+
+textarea {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	padding-left: 10px;
+	padding-right: 10px;
+		resize: none;
+}
+p{
+	display: block;
+	text-align: left;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+h3{
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+b{
+	display: block;
+	text-align: left;
+	font-size: .98em;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+div.layout
+{
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+div.input{
+	width: auto;
+}
+/* Tooltip container */
+
+.tooltip {
+	position: static;
+	display: inline;
+	border-bottom: 1px dotted black;
+	/* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 350px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	padding: 5px 5px 5px 5px;
+	border-radius: 5px;
+
+	/* Position the tooltip text - see examples below! */
+	position: absolute;
+	z-index: 1;
+	width: 330px;
+	top: 30%;
+	left: 49%;
+	margin-left: -165px;
+	/* Use half of the width (120/2 = 60), to center the tooltip */
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+}
+h1{
+	line-height: 1;
+}
+h3{
+	line-height: 0;
+}
+h4{
+	display: block;
+	text-align: left;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+</style>
+
+<body>
+
+<center>
+	<h3>LinkedIn Job Hider</h3>
+</center>
+		<div class="layout">
+		</br>
+
+		</br>
+		 <p>
+			 <button id="buttonHide" value="">Hide Jobs</button>
+		 </p>
+	 	</br>
+		
+		</div>
+	</body>
+</html>

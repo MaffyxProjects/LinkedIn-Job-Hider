@@ -1,0 +1,31 @@
+{
+    "name": "LinkedIn Job Hider",
+    "manifest_version": 3,
+    "version": "1.0.00",
+    "description": "Hide LinkedIn Jobs You've Already Viewed",
+    "author": "Matt Fox",
+    "icons": {
+              "128": "/images/icons/icon128.png" },
+
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "service_worker": "background.js"
+      },
+
+    "permissions": [
+        "tabs","storage","activeTab","scripting","identity"
+    ],
+    "content_scripts": [
+        {
+          "matches": [ "*://linkedin.com/*"],
+          "js" : [ "insertButton.js"],
+          "run_at": "document_start"
+        }
+    ],
+    "host_permissions": [
+        "https://www.linkedin.com/*"
+    ]
+    
+}
