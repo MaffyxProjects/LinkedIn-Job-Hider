@@ -1,7 +1,7 @@
 {
     "name": "LinkedIn Job Hider",
     "manifest_version": 3,
-    "version": "1.0.00",
+    "version": "1.0.01",
     "description": "Hide LinkedIn Jobs You've Already Viewed",
     "author": "Matt Fox",
     "icons": {
@@ -25,7 +25,7 @@
         }
     ],
     "host_permissions": [
-        "https://www.linkedin.com/*"
+        "https://www.linkedin.com/jobs/*"
     ]
     
 }

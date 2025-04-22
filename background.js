@@ -1,44 +1,41 @@
-//Checks if the page was updated and finished loading to insert the Hide Jobs button on the page.
-chrome.tabs.onUpdated.addListener( function (tabId, changeInfo, tab) {
-  if (changeInfo.status == 'complete') {
-    runInsertButton()
-  }
-})
+ 
+// Helper functions
+async function getActiveTab() {
+  const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
+  return tab;
+}
 
-//Function to call the script to insert the hide jobs button on the jobs page.
+async function injectScript(scriptFile) {
+  const tab = await getActiveTab();
+  await chrome.scripting.executeScript({
+    target: { tabId: tab.id },
+    files: [scriptFile]
+  });
+}
+
+// Main functions
 function runInsertButton() {
-  async function injectScript() {
-    const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
-    await chrome.scripting.executeScript({
-    target: { tabId: tab.id },
-    files: ['insertButton.js']
-    });
-  }
-  injectScript()
+  injectScript('insertButton.js');
 }
 
-//Function to call the script that hides all the jobs.
+
+
 function runHideLinkedInJobs() {
-  async function injectScript() {
-    const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
-    await chrome.scripting.executeScript({
-    target: { tabId: tab.id },
-    files: ['hideJobs.js']
-    });
-  }
-  injectScript()
+  injectScript('hideJobs.js');
 }
 
-//Chrome messsage listener to listen for the command to hide the listed jobs.
-chrome.runtime.onMessage.addListener(
-  function(request, sender, sendResponse) {
-    switch (request.directive) {
-        case "hideJobs":
-          runHideLinkedInJobs()
-          sendResponse({}); // sending back empty response to sender
-        break;
-
-      default:
-    }
+// Event listeners
+chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
+  if (changeInfo.status === 'complete') {
+    runInsertButton();
+   
   }
-);
+});
+
+chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+  switch (request.directive) {
+    case "hideJobs":
+      runHideLinkedInJobs();
+      break;
+  }
+});
