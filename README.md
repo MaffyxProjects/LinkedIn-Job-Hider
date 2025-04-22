@@ -42,6 +42,7 @@ Tired of seeing the same irrelevant or already-viewed jobs cluttering your Linke
 ### In-Page "Hide Jobs" Button
 
 **(insertButton.js)** - This button is added dynamically to the LinkedIn page.
+
 ![Injected Button Example](https://github.com/MaffyxProjects/LinkedIn-Job-Hider/blob/main/images/Screenshot%202025-04-22%20151021.png?raw=true)
 
 ## Installation
