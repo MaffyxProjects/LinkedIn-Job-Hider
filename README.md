@@ -31,11 +31,9 @@ Tired of seeing the same irrelevant or already-viewed jobs cluttering your Linke
 
 ### Extension Popup
 
-**(popup.js)** - The button here triggers the hiding process.
+**(popup.js)** - The button here triggers the hiding process manually if the button doesn't show.
 
 ![Extension Popup Example](https://github.com/MaffyxProjects/LinkedIn-Job-Hider/blob/main/images/Screenshot%202025-04-22%20151031.png?raw=true)
-
-*(To insert image: Replace the line above with `!Extension Popup`)*
 
 ---
 
