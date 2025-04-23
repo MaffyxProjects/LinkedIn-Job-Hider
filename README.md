@@ -68,9 +68,6 @@ Tired of seeing the same irrelevant or already-viewed jobs cluttering your Linke
 *   **Selectors:** The extension relies on specific CSS class names and HTML structure. Changes to these by LinkedIn will require code adjustments.
 *   **Rate Limiting:** While delays are included, aggressive use *might* potentially trigger rate limiting or captchas from LinkedIn, although this is unlikely with the current setup. Use responsibly.
 
-
-*(To insert image: Replace the line above with `!In-Page Button`)*
-
 ## Installation
 
 1.  Clone this repository or download the source code as a ZIP file and extract it.
