@@ -16,8 +16,7 @@ Tired of seeing the same irrelevant or already-viewed jobs cluttering your Linke
 *   **Automatic Page Navigation:** After dismissing jobs on the current page, the extension automatically clicks the "Next" page button and scrolls to the top, ready for the next manual click if desired (or to continue if you modify it for full automation).
 *   **Intelligent Delays:** Incorporates small delays between dismiss actions to mimic human interaction and improve reliability.
 *   **Page Detection:** Works on both LinkedIn Job Search (`/jobs/search/`) and Job Collections (`/jobs/collections/`) pages.
-*   **Clear Cache:** Option in the popup to clear locally stored data (if used by future features).
-
+  
 ## How It Works
 
 1.  **Button Injection:** When you load a LinkedIn Job Search or Collections page, the extension injects a script (`insertButton.js`) that adds the "Hide Jobs" button near the page navigation controls at the bottom of the list.
