@@ -52,31 +52,7 @@ Tired of seeing the same irrelevant or already-viewed jobs cluttering your Linke
 6.  The "LinkedIn Job Hider" extension should now appear in your list of extensions and be active.
 
 ## Usage
-
-1.  Navigate to a LinkedIn Job Search results page (e.g., `https://www.linkedin.com/jobs/search/`) or a Job Collections page (e.g., `https://www.linkedin.com/jobs/collections/`).
-2.  Wait for the page and job listings to load fully.
-3.  **Option 1 (In-Page):** Scroll down to find the **"Hide Jobs"** button added near the pagination controls (page numbers) at the bottom of the job list. Click it.
-4.  **Option 2 (Popup):** Click the extension's icon in your browser toolbar to open the popup, then click the **"Hide Jobs on this Page"** button.
-5.  The extension will begin dismissing the jobs listed on the current page.
-6.  Once finished, it will automatically navigate to the next page (if available) and scroll to the top.
-7.  Repeat the process by clicking the button again on the new page if you wish to continue hiding jobs.
-
-## Important Notes & Limitations
-
-*   **LinkedIn UI Changes:** LinkedIn frequently updates its website structure. These updates **will likely break** the extension's functionality over time (e.g., it might not find the job listings, dismiss buttons, or pagination). If the extension stops working, it probably needs its selectors updated to match LinkedIn's new code.
-*   **Selectors:** The extension relies on specific CSS class names and HTML structure. Changes to these by LinkedIn will require code adjustments.
-*   **Rate Limiting:** While delays are included, aggressive use *might* potentially trigger rate limiting or captchas from LinkedIn, although this is unlikely with the current setup. Use responsibly.
-
-## Installation
-
-1.  Clone this repository or download the source code as a ZIP file and extract it.
-2.  Open Google Chrome and navigate to `chrome://extensions/`.
-3.  Enable **"Developer mode"** using the toggle switch in the top right corner.
-4.  Click the **"Load unpacked"** button that appears.
-5.  Select the folder where you extracted the extension's files.
-6.  The "LinkedIn Job Hider" extension should now appear in your list of extensions and be active.
-
-## Usage
+![Button Running Example](https://www.loom.com/share/d4f17c7c82f74a84a0b58458b6af71fb?sid=da67dbb9-924c-48f6-9826-79cdf03a0959)
 
 1.  Navigate to a LinkedIn Job Search results page (e.g., `https://www.linkedin.com/jobs/search/`) or a Job Collections page (e.g., `https://www.linkedin.com/jobs/collections/`).
 2.  Wait for the page and job listings to load fully.
