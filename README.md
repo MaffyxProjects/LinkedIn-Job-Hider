@@ -52,7 +52,7 @@ Tired of seeing the same irrelevant or already-viewed jobs cluttering your Linke
 6.  The "LinkedIn Job Hider" extension should now appear in your list of extensions and be active.
 
 ## Usage
-![Button Running Example](https://www.loom.com/share/d4f17c7c82f74a84a0b58458b6af71fb?sid=da67dbb9-924c-48f6-9826-79cdf03a0959)
+![Button Running Example](https://www.loom.com/share/d4f17c7c82f74a84a0b58458b6af71fb)
 
 1.  Navigate to a LinkedIn Job Search results page (e.g., `https://www.linkedin.com/jobs/search/`) or a Job Collections page (e.g., `https://www.linkedin.com/jobs/collections/`).
 2.  Wait for the page and job listings to load fully.
